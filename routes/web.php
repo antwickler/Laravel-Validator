@@ -3,6 +3,7 @@
 Route::get('/contact', function () {
     return view('contact');
 });
+
 Route::get('/success', function () {
     return view('success');
 });

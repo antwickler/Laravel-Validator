@@ -21,19 +21,18 @@ class SignupController extends Controller
     		'gender' => 'required|alpha',
     		'email' => 'required|email',
     		'password' => 'required|alpha_dash|confirmed',
-    		'password_confirmation' => 'required|alpha_dash'
+    		'password_confirmation' => 'required|alpha_dash',
+    		'phone' => 'required|numeric'
     	];
 
-    	$messages = [
-    		'firstName' => 'Please enter your first name!',
-    		'lastName' => 'Please enter your last name!',
-    		'screenName' => 'Please enter your screen name!',
-    		'birthday' => 'Please enter your birthday!',
-    		'gender' => 'Please enter your gender!',
+    	/*$messages = [
+    		'required' => 'Please enter your information!',
+    		'alpha' => 'Please enter information in English!',
+    		'date' => 'Please enter your screen name!',
     		'email' => 'Please enter E-mail address!',
-    		'password' => 'Please enter your password!',
-    		'password_confirmation' => 'Please confirm your password!',
-		];
+    		'alpha_dash' => 'Please enter information in alphabetic or numeric!',
+    		'confirmed' => 'Your password does not match!',
+		];*/
 
     	$v = Validator::make($request->all(), $rules);
 

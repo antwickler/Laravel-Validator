@@ -31,16 +31,18 @@
         					  	<input type="text" name="lastName" value="Enter Last Name..."><br><br>
         					  	<label>Screen Name &nbsp;</label>
         					  	<input type="text" name="screenName" value="Enter Screen Name..."><br><br>
+                      <label>Password &nbsp;</label>
+                      <input type="password" name="password" value="MyPassword"><br><br>
+                      <label>Confirm Password &nbsp;</label>
+                      <input type="password" name="password_confirmation" value="MyPassword"><br><br>
+                      <label>E-mail &nbsp;</label>
+                      <input type="email" name="email" value="YourMail@email.com"><br><br>
         					  	<label>Date of Birth &nbsp;</label>
         					  	<input type="date" name="birthday"><br><br>
         					  	<label>Gender &nbsp;</label>
         					  	<input type="text" name="gender" value="Male or Female"><br><br>
-                      <label>E-mail &nbsp;</label>
-        					  	<input type="email" name="email" value="Enter E-mail..."><br><br>
-        					  	<label>Password &nbsp;</label>
-        					  	<input type="password" name="password" value="MyPassword"><br><br>
-        					  	<label>Confirm Password &nbsp;</label>
-        					  	<input type="password" name="password_confirmation" value="MyPassword"><br><br>
+                      <label>Phone &nbsp;</label>
+                      <input type="number" name="phone" value="0801234567"><br><br>
         					  	{{ csrf_field() }}
                     </b></p>  
                     <p align="center">
