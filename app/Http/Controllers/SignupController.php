@@ -25,16 +25,16 @@ class SignupController extends Controller
     		'phone' => 'required|numeric'
     	];
 
-    	/*$messages = [
+    	$messages = [
     		'required' => 'Please enter your information!',
     		'alpha' => 'Please enter information in English!',
     		'date' => 'Please enter your screen name!',
     		'email' => 'Please enter E-mail address!',
     		'alpha_dash' => 'Please enter information in alphabetic or numeric!',
     		'confirmed' => 'Your password does not match!',
-		];*/
+		];
 
-    	$v = Validator::make($request->all(), $rules);
+    	$v = Validator::make($request->all(), $rules, $messages);
 
     	if ( $v->passes() )
     		return view('/success');
